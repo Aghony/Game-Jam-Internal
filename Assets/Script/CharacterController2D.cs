@@ -40,11 +40,16 @@ public class CharacterController2D : MonoBehaviour
         if (horizontal != 0)
         {
             if (gameObject.name == "Soldier")
-                animator.Play("Soldier_walk");
+                animator.Play("Soldier_Walk");
             else if (gameObject.name == "Slime")
                 animator.Play("Slime_Walk");
         }
-        else
+            
+            if (horizontal > 0)
+                GetComponent<SpriteRenderer>().flipX = false;
+            else if (horizontal < 0)
+                GetComponent<SpriteRenderer>().flipX = true;
+            else
         {
             if (gameObject.name == "Soldier")
                 animator.Play("Soldier_Idle");
