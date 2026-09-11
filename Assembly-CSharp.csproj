@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Simple 2D Platformer BE2\ReadMe\Scripts\ReadmeBE2.cs" />
+    <Compile Include="Assets\Script\SoulSwapController.cs" />
+    <Compile Include="Assets\Script\SoldierAbility.cs" />
+    <Compile Include="Assets\Script\CharacterController2D.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
