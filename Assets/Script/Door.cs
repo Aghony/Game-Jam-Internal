@@ -4,6 +4,8 @@ public class Door : MonoBehaviour
 {
     private Animator animator;
 
+    public GameObject winPanel;
+
     private bool soldierInside = false;
     private bool slimeInside = false;
     private bool doorOpened = false;
@@ -33,7 +35,10 @@ public class Door : MonoBehaviour
         if (soldierInside && slimeInside && !doorOpened)
         {
             doorOpened = true;
-            animator.Play("Door_open");
+
+            animator.Play("Door_Open");
+
+            winPanel.SetActive(true);
         }
     }
 }
