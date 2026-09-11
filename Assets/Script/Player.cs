@@ -69,7 +69,11 @@
             slimeAnimator.Play("Slime_Walk");
             else
             slimeAnimator.Play("Slime_Idle");
-            
+
+            if (movement.x > 0)
+            slime.GetComponent<SpriteRenderer>().flipX = false;
+            else if (movement.x < 0)
+            slime.GetComponent<SpriteRenderer>().flipX = true;
         }
     }
     }

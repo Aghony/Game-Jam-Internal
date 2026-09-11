@@ -227,6 +227,13 @@ MonoBehaviour:
   moveSpeed: 3
   soldier: {fileID: 1696396440}
   slime: {fileID: 1216971897}
+  soldierAnimator: {fileID: 1696396445}
+  slimeAnimator: {fileID: 1216971902}
+  attackPoint: {fileID: 0}
+  attackRadius: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -475,7 +482,7 @@ Transform:
   m_GameObject: {fileID: 1216971897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: -4.72, z: 0}
+  m_LocalPosition: {x: 0.1, y: -5.65, z: 0}
   m_LocalScale: {x: 14.851025, y: 14.851025, z: 14.851025}
   m_ConstrainProportionsScale: 0
   m_Children: []
