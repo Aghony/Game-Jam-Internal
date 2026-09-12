@@ -589,7 +589,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1880,9 +1880,9 @@ GameObject:
   - component: {fileID: 479669652}
   - component: {fileID: 479669651}
   - component: {fileID: 479669655}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2002,7 +2002,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5677528384076015032, guid: ee4a483b24550af4b8841bd8d4cb2bf8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2042,6 +2042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Door
   winPanel: {fileID: 1306710974}
+  isFinalLevel: 0
+  endingManager: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -4166,7 +4168,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2057977949922539583, guid: b29cf9c9dd9ceeb45b9c97122156d840, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4287,6 +4289,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController2D
   moveSpeed: 5
   jumpForce: 8
+  cameraOffset: {x: 0, y: 0, z: 0}
+  normalGravity: 3
+  fallGravity: 5
   cameraTransform: {fileID: 519420032}
   cameraSmoothSpeed: 5
 --- !u!1 &1306710974
@@ -4610,7 +4615,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -5534,7 +5539,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1997860484614730854, guid: 14c5e4ad6398f184daccb1b4ab7ca2bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5655,6 +5660,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController2D
   moveSpeed: 5
   jumpForce: 8
+  cameraOffset: {x: 0, y: 0, z: 0}
+  normalGravity: 3
+  fallGravity: 5
   cameraTransform: {fileID: 519420032}
   cameraSmoothSpeed: 5
 --- !u!114 &1696396449
