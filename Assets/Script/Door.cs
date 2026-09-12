@@ -36,7 +36,7 @@ public class Door : MonoBehaviour
         {
             doorOpened = true;
 
-            animator.Play("Door_Open");
+            animator.Play("Door_open");
 
             winPanel.SetActive(true);
         }
