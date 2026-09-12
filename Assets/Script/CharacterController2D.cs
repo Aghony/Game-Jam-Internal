@@ -3,12 +3,13 @@ using UnityEngine;
 public class CharacterController2D : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float jumpForce = 8f;
+    public float jumpForce = 12f;
 
     private Rigidbody2D rb;
     private Animator animator;
     private bool isGrounded;
-
+    public Transform cameraTransform;
+    public float cameraSmoothSpeed = 5f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -33,6 +34,23 @@ public class CharacterController2D : MonoBehaviour
         }
 
         SetAnimation(horizontal);
+    }
+
+    void LateUpdate()
+    {
+        if(cameraTransform == null ) return;
+
+        Vector3 targetPosition = new Vector3(
+            transform.position.x,
+            transform.position.y,
+            cameraTransform.position.z
+        );
+
+        cameraTransform.position = Vector3.Lerp(
+        cameraTransform.position,
+        targetPosition,
+        cameraSmoothSpeed * Time.deltaTime
+        );
     }
 
     void SetAnimation(float horizontal)

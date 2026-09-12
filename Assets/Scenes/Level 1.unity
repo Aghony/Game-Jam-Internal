@@ -1880,7 +1880,7 @@ GameObject:
   - component: {fileID: 479669652}
   - component: {fileID: 479669651}
   - component: {fileID: 479669655}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4287,6 +4287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController2D
   moveSpeed: 5
   jumpForce: 8
+  cameraTransform: {fileID: 519420032}
+  cameraSmoothSpeed: 5
 --- !u!1 &1306710974
 GameObject:
   m_ObjectHideFlags: 0
@@ -5653,6 +5655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterController2D
   moveSpeed: 5
   jumpForce: 8
+  cameraTransform: {fileID: 519420032}
+  cameraSmoothSpeed: 5
 --- !u!114 &1696396449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5670,6 +5674,7 @@ MonoBehaviour:
   breakableLayer:
     serializedVersion: 2
     m_Bits: 64
+  attackCooldown: 0.2
 --- !u!1 &1889396185
 GameObject:
   m_ObjectHideFlags: 0

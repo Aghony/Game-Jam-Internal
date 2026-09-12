@@ -9,7 +9,8 @@ public class Door : MonoBehaviour
     private bool soldierInside = false;
     private bool slimeInside = false;
     private bool doorOpened = false;
-
+    public bool isFinalLevel;
+    public EndingManager endingManager;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -35,10 +36,16 @@ public class Door : MonoBehaviour
         if (soldierInside && slimeInside && !doorOpened)
         {
             doorOpened = true;
+    animator.Play("Door_open");
 
-            animator.Play("Door_open");
-
-            winPanel.SetActive(true);
+        if (isFinalLevel)
+        {
+            endingManager.StartEnding();
+            }
+            else
+            {
+                winPanel.SetActive(true);
+            }
         }
     }
 }
