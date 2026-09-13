@@ -24,4 +24,10 @@ public class EndingManager : MonoBehaviour
 
         endingText.text = "THE END";
     }
+
+    public void MainMenu()
+    {
+    Time.timeScale = 5f;
+    UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+    }
 }

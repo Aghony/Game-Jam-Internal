@@ -70,7 +70,7 @@ Material:
     - _OutlineSoftness: 0
     - _OutlineUVSpeedX: 0
     - _OutlineUVSpeedY: 0
-    - _OutlineWidth: 0
+    - _OutlineWidth: 0.164
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.9
@@ -196,6 +196,10 @@ MonoBehaviour:
       m_LigatureGlyphID: 64
     - m_ComponentGlyphIDs: 43000000c100000013020000
       m_LigatureGlyphID: 629
+    - m_ComponentGlyphIDs: 9b000000a4000000
+      m_LigatureGlyphID: 245
+    - m_ComponentGlyphIDs: 9b000000b4000000
+      m_LigatureGlyphID: 246
     m_GlyphPairAdjustmentRecords: []
     m_MarkToBaseAdjustmentRecords: []
     m_MarkToMarkAdjustmentRecords: []
